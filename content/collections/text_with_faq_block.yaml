@@ -1,0 +1,5 @@
+title: 'Text With Faq Block'
+revisions: false
+date_behavior:
+  past: public
+  future: private

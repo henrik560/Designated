@@ -1,0 +1,44 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: content
+        field:
+          type: markdown
+          localizable: true
+          instructions: 'This field is dedicated to all the content in the pages header, including title.'
+          instructions_position: above
+          listable: hidden
+          visibility: visible
+          restrict: false
+          automatic_line_breaks: true
+          automatic_links: false
+          escape_markup: false
+          smartypants: false
+          antlers: false
+      -
+        handle: usps
+        field:
+          display: Usps
+          type: list
+          icon: list
+          instructions: 'This field is dedicated to the usps in this block'
+          listable: true
+          instructions_position: above
+          visibility: visible
+  sidebar:
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
+title: 'Block Text With Usp'

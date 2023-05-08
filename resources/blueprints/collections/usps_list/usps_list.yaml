@@ -1,0 +1,29 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+      -
+        handle: usps
+        field:
+          display: Usps
+          type: list
+          icon: list
+          instructions: 'This field is dedicated to the usps for this content block'
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          validate:
+            - 'max:3'
+  sidebar:
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
+title: 'Usps List'

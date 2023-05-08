@@ -1,0 +1,35 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: subtitle
+        field:
+          input_type: text
+          antlers: false
+          display: Subtitle
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: content
+        field:
+          type: markdown
+          localizable: true
+  sidebar:
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+title: '2 Column Title Text Block'

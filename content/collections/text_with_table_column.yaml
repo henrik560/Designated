@@ -1,0 +1,5 @@
+title: 'Text With Table Column'
+revisions: false
+date_behavior:
+  past: public
+  future: private

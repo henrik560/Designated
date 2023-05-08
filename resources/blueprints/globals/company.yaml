@@ -1,0 +1,54 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: phonenumber
+        field:
+          placeholder: '000 000 0000'
+          input_type: text
+          character_limit: 10
+          antlers: false
+          display: Phonenumber
+          type: text
+          icon: text
+          instructions: 'Example: 000 000 0000'
+          listable: hidden
+          instructions_position: below
+          visibility: visible
+          duplicate: false
+          validate:
+            - required
+      -
+        handle: email
+        field:
+          placeholder: hi@designated.nl
+          input_type: text
+          antlers: false
+          display: Email
+          type: text
+          icon: text
+          instructions: 'Example: hi@designated.nl'
+          listable: hidden
+          instructions_position: below
+          visibility: visible
+          duplicate: false
+          validate:
+            - required
+            - email
+      -
+        handle: address
+        field:
+          placeholder: 'Dublinstraat 48, Zoetemeer'
+          input_type: text
+          antlers: false
+          display: Address
+          type: text
+          icon: text
+          instructions: 'Example: Dublinstraat 48, Zoetemeer'
+          listable: hidden
+          instructions_position: below
+          visibility: visible
+          duplicate: false
+          validate:
+            - required
