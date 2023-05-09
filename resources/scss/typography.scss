@@ -1,0 +1,131 @@
+/* Import Hurme Geometric Sans 1 font files */
+@font-face {
+  font-family: 'Hurme Geometric Sans 1';
+  src: url('../fonts/HurmeGeometricSans1/HurmeGeometricSans1\ Light.otf');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Hurme Geometric Sans 1';
+  src: url('../fonts/HurmeGeometricSans1/HurmeGeometricSans1.otf');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Hurme Geometric Sans 1';
+  src: url('../fonts/HurmeGeometricSans1/HurmeGeometricSans1\ SemiBold.otf');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Hurme Geometric Sans 1';
+  src: url('../fonts/HurmeGeometricSans1/HurmeGeometricSans1\ Bold.otf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+html, body {
+    font-family: 'Hurme Geometric Sans 1', sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 2.125rem;
+    line-height: 2.75rem;
+    margin: 0 0 1.25rem;
+    font-weight: 700;
+
+    @media (min-width: 768px) {
+        font-size: 3.375rem;
+        line-height: 4rem;
+    }
+
+    @media (min-width: 1280px) {
+        font-size: 4.625rem;
+        line-height: 5.25rem;
+    }
+
+    @media (min-width: 1536px) {
+        font-size: 5.138vw;
+        line-height: 5.833vw;
+        margin-bottom: 1.388vw;
+    }
+}
+
+h2 {
+    font-size: 2.125rem;
+    line-height: 2.75rem;
+    font-weight: 700;
+    margin: 0 0 1.25rem;
+
+    @media (min-width: 768px) {
+        font-size: 3rem;
+        line-height: 3.75rem;
+    }
+
+    @media (min-width: 1280px) {
+        font-size: 4rem;
+        line-height: 4.75rem;
+    }
+
+    @media (min-width: 1536px) {
+        font-size: 4.444vw;
+        line-height: 5.277vw;
+        margin-bottom: 1.388vw;
+    }
+}
+
+h3 {
+    font-size: 2.125rem;
+    line-height: 2.75rem;
+    font-weight: 700;
+    margin: 0 0 1.25rem;
+
+    @media (min-width: 768px) {
+        font-size: 2.75rem;
+        line-height: 3.375rem;
+    }
+
+    @media (min-width: 1280px) {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+
+    @media (min-width: 1536px) {
+        font-size: 3.75vw;
+        line-height: 4.444vw;
+        margin-bottom: 1.388vw;
+    }    
+}
+
+h4 {
+    font-size: 1rem;
+    line-height: 1.625rem;
+    font-weight: 700;
+    margin: 0 0 1.25rem;
+
+    @media (min-width: 1280px) {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+    }
+
+    @media (min-width: 1536px) {
+        font-size: 1.25vw;
+        line-height: 2.083vw;
+        margin-bottom: 1.388vw;
+    }    
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 1.75rem;
+}
+
+.text-green {
+    color: $color-secondary;
+}
+
+//h5 - h6 (Pagina maakt geen gebruik van h5 of h6 
