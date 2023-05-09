@@ -16,7 +16,7 @@ class PagesContentController extends Controller
             throw new HttpException(404, 'Please provide a page handler');
         }
 
-        // /** @var Collection|null $entry */
+        /** @var Collection|null $entry */
         $entry = collect(Collection::findByHandle("pages")->queryEntries()->where('slug', $page)->with('content_blocks')->get())->toArray();
 
         if (!$entry) {
