@@ -1,0 +1,26 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+      -
+        handle: content
+        field:
+          type: markdown
+          localizable: true
+      -
+        handle: table
+        field:
+          display: Table
+          type: table
+          icon: table
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          validate:
+            - required
+title: 'Text Field With Table Block'

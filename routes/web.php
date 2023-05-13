@@ -14,4 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [HomeController::class, 'index']);
+Route::get('/', function () {
+    return redirect('/website-laten-maken');
+});
+
+Route::get('/website-laten-maken', [HomeController::class, 'index']);

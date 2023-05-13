@@ -1,17 +1,23 @@
 <script setup>
 import axios from 'axios';
-import { onMounted } from 'vue';
+import { onMounted, ref } from 'vue';
 
-const pageContent = () => {
-    // axios.get(`/api/pages/${window.location.pathname}`)
-    axios.get(`/api/pages/website-laten-maken`)
+import ContentBlock from '@/Components/ContentBlock.vue';
+import { Head } from '@inertiajs/vue3';
+
+const pageContent = ref([]);
+
+const fetchPageContent = () => {
+    axios.get(`/api/pages${window.location.pathname}`)
         .then((response) => {
-            console.log(response.data.entry);
+            if (response.data.entry) {
+                pageContent.value = response.data.entry.content_blocks;
+            }
         })
 }
 
 onMounted(() => {
-    pageContent();
+    fetchPageContent();
 })
 
 </script>
@@ -20,8 +26,7 @@ onMounted(() => {
     <Head title="Maatwerk websites die resultaat opleveren | Designated" />
 
     <div class="page-wrapper">
-        <h1>Wij maken conversiegerichte websites</h1>
-        <p>Suvteststsetset et et set est et setse </p>
+        <ContentBlock v-for="block in pageContent" :key="block.id" :block="block"></ContentBlock>
     </div>
 </template>
 

@@ -21,16 +21,8 @@ sections:
           instructions_position: above
           visibility: visible
           collections:
-            - 2_column_text_block
-            - 2_images_block
-            - consultation_block
-            - text_with_faq_block
-            - text_with_image_block
-            - text_with_list
-            - text_with_table_column
-            - text_with_usps_block
-            - usps_block
-            - vertical_list_block
+            - page_header
+            - text_field_with_table_block
           validate:
             - required
   sidebar:

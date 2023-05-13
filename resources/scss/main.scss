@@ -3,3 +3,6 @@
 @import 'tailwindcss/utilities';
 
 @import './variable.scss', './typography.scss';
+
+@import './Components/vue/pageHeader.scss',
+        './Components/vue/TextWithTableBlock.scss';

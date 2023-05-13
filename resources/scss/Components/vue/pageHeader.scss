@@ -1,0 +1,189 @@
+.vue-page-header {
+    .header {
+        margin-bottom: 3.125rem;
+
+        .header-title {
+            margin-top: 2.815rem;
+        }
+
+        .header-subtitle {
+            margin-bottom: 1rem;
+        }
+
+        .header-usp-list {
+            list-style: none;
+            margin-bottom: 1rem;
+
+            .header-usp-list-item {
+                position: relative;
+                margin-left: 3rem;
+
+                &::before {
+                    content: "";
+                    display: inline-block;
+                    position: absolute;
+                    top: 6px;
+                    left: -3rem;
+                    background-image: url('../assets/svg/check.svg');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    width: 20px;
+                    height: 20px;
+                }   
+
+                &:not(:last-child) {
+                    margin-bottom: 0.625rem;
+                }
+            }
+        }
+
+        .discover {
+            font-weight: 400;
+            font-size: 1.125rem;
+            display: flex;
+            align-items: center;
+
+            &:after {
+                content: "";
+                display: inline-block;
+                margin-left: 1rem;
+                width: 18px;
+                height: 18px;
+                transform: rotate(90deg);
+                background-color: $color-red;
+                background-image: url('../assets/svg/arrow-down.svg');
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: 14px 14px;
+            }
+        }
+    }
+
+    .sub-header {
+        position: relative;
+        margin-bottom: 3.75rem;
+        
+        .wrapper {
+            .sub-wrapper {
+                &:after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: 60px;
+                    left: 0;
+                    width: 100vw;
+                    height: calc(100%);
+                    background-color: $color-primary;
+                    z-index: -1;
+                }    
+
+
+                .usps-wrapper {
+                    position: relative;
+
+                    .image-wrapper {
+                        position: absolute;
+                        z-index: 1;
+                        height: 100%;
+                        width: 100%;
+                        overflow: hidden;
+
+                        @keyframes pulse {
+                            0% {
+                                transform: scale(1);
+                            }
+                            50% {
+                                transform: scale(1.5);
+                            }
+                            100% {
+                                transform: scale(1);
+                            }
+                        }
+
+                        .background-image {
+                            width: 100%;
+                            height: 100%;
+                            object-position: 80% 50%;
+                            object-fit: cover;
+                            animation: pulse 30s infinite;
+                        }
+                    }
+
+                    .usps-list {
+                        position: relative;
+                        z-index: 2;
+                        padding: 2.25rem 1.5rem;
+
+                        li {
+                            &:not(:last-child) {
+                                margin-bottom: 1.5rem;
+                            }
+
+                            &::before {
+                                content: "";
+                                display: inline-block;
+                                position: absolute;
+                                width: 84px;
+                                height: 60px;
+                                background-image: url('../assets/svg/check.svg');
+                                background-repeat: no-repeat;
+                                background-size: 100%;
+                                opacity: 0.1;
+                            }
+
+                            h3 {
+                                color: $color-white;
+                                font-size: 1rem;
+                                margin-bottom: 0.25rem;
+                            }
+
+                            p {
+                                color: $color-white;
+                                font-size: 0.875rem;
+                                line-height: 1.5rem;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .content-columns {
+        position: relative;
+        padding-bottom: 100px;
+
+        .columns {
+            &:after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: calc(100%);
+                background-color: $color-primary;
+                z-index: -1;
+            }    
+
+            .col {
+                .subtitle {
+                    color: $color-white;
+                    opacity: 0.7;
+                    font-weight: 400;
+                    font-size: 1rem;
+                }
+
+                h2 {
+                    color: $color-white;
+                }
+
+                p {
+                    color: $color-white;
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}
