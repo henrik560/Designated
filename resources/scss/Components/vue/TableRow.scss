@@ -1,0 +1,51 @@
+.vue-table-row {
+    display: flex;
+    
+    .table-info {
+        flex: 1 0 60%;
+        padding: 1.125rem;
+
+        .row-data-content {
+            padding-left: 1.375rem;
+
+            .title {
+                color: $color-black;
+                font-size: 0.875rem;
+                font-weight: 700;
+                line-height: 1.5rem;
+            }
+
+            .info {
+                position: relative;
+
+                .tooltip-content {
+                    position: absolute;
+                    top: 0;
+                    width: 400px;
+                    border-radius: 1rem;
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+
+    .table-check,
+    .table-cross {
+        flex: 1 0 20%;
+
+        .checkmark {
+            background-color: rgb(218,246,237);
+        }
+
+        .checkmark, .crossmark {
+            padding: 1.5rem;
+
+            .font-icon {
+                padding: 0.5rem;
+                width: 25px;
+                height: 25px;
+                margin: 0 70px;
+            }
+        }
+    }
+}

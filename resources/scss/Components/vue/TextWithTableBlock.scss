@@ -22,6 +22,11 @@
                     margin: 0 auto;
                 }
             }
+
+            .table-container {
+                box-shadow: 0 0.3472222222vw 4.1666666667vw rgba(0,0,0,.12);
+                overflow-x: scroll;
+            }
         }
     }
 }
