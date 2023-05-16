@@ -14,9 +14,9 @@ const props = defineProps({
         <td class="table-info flex items-center">
             <div class="row-data-content flex gap-4">
                 <span class="title">{{ data[0] }}</span>
-                <div class="info">
+                <div class="info tooltip-group group">
                     <div class="tooltip"><i class="fa-solid fa-circle-info text-gray-400"></i></div>
-                    <span class="tooltip-content bg-zinc-950 text-white">{{ data[1] }}</span>
+                    <span class="tooltip-content z-20 pointer-events-none bg-zinc-950 text-white duration-300 invisible opacity-0 group-hover:visible group-hover:opacity-100">{{ data[1] }}</span>
                 </div>
             </div>
         </td>

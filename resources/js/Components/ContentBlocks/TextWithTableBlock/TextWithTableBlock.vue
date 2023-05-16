@@ -26,6 +26,10 @@ const getCells = computed(() => {
                     <div class="row-content">
                         <table class="table">
                             <tbody>
+                                <tr class="table-header-row flex items-center">
+                                    <th class="table-header-item custom">Maatwerk website</th>
+                                    <th class="table-header-item template">Template website</th>
+                                </tr>
                                 <TableRow v-for="row, index in getCells" :data="row.cells" :key="index"></TableRow>
                             </tbody>
                         </table>

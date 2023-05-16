@@ -26,6 +26,21 @@
             .table-container {
                 box-shadow: 0 0.3472222222vw 4.1666666667vw rgba(0,0,0,.12);
                 overflow-x: scroll;
+
+                .table-header-row {
+                    width: 458px;
+                    margin-left: auto;
+
+                    .table-header-item {
+                        width: 100%;
+                        padding: 1.125rem;
+                        font-weight: normal;
+
+                        &.custom {
+                            background-color: rgb(218,246,237);
+                        }
+                    }
+                }
             }
         }
     }

@@ -2,8 +2,12 @@
     display: flex;
     
     .table-info {
-        flex: 1 0 60%;
+        flex: 1 1 60%;
         padding: 1.125rem;
+
+        @media screen and (max-width: 768px) {
+            flex: 1 0 60%;
+        }
 
         .row-data-content {
             padding-left: 1.375rem;
@@ -20,10 +24,24 @@
 
                 .tooltip-content {
                     position: absolute;
-                    top: 0;
+                    top: 150%;
+                    left: -150%;
                     width: 400px;
                     border-radius: 1rem;
                     padding: 1rem;
+
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        left: 12px;
+                        top: -12px;
+                        width: 0;
+                        height: 0;
+                        border-left: 20px solid transparent;
+                        border-right: 20px solid transparent;
+                        border-bottom: 20px solid rgb(9 9 11 / 1);
+                        clear: both;
+                    }
                 }
             }
         }
@@ -31,7 +49,8 @@
 
     .table-check,
     .table-cross {
-        flex: 1 0 20%;
+        flex: 1 1 20%;
+        padding: 0;
 
         .checkmark {
             background-color: rgb(218,246,237);
