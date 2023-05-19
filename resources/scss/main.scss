@@ -4,6 +4,27 @@
 
 @import './variable.scss', './typography.scss';
 
-@import './Components/vue/pageHeader.scss',
-        './Components/vue/TableRow.scss',
-        './Components/vue/TextWithTableBlock.scss';
+@import './Components/animations/pluse.scss';
+
+@import './Components/vue/PageHeader/pageHeader.scss',
+
+        './Components/vue/StepsList/StepsList.scss',
+        './Components/vue/StepsList/StepItem/StepItem.scss',
+
+        './Components/vue/ClientsBlock/ClientsBlock.scss',
+
+        './Components/vue/CaseSlider/CasesSlider.scss',
+        './Components/vue/CaseSlider/CaseSlide/CaseSlide.scss',
+
+        './Components/vue/FaqBlock/FaqBlock.scss',
+        './Components/vue/FaqBlock/FaqItem/FaqItem.scss',
+
+        './Components/vue/Testimonials/TestimonialsBlock.scss',
+        './Components/vue/Testimonials/Testimonial/Testimonial.scss',
+
+        './Components/vue/TwoImagesBlock/TwoImagesBlock.scss',
+
+        './Components/vue/ImageWithTextBlock/ImageWithTextBlock.scss',
+
+        './Components/vue/TextWithTableBlock/TextWithTableBlock.scss',
+        './Components/vue/TextWithTableBlock/TableRow/TableRow.scss';

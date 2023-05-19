@@ -1,0 +1,34 @@
+.vue-faq-block {
+    background-color: $color-primary;
+    padding-bottom: 4.685rem;
+
+    .faq-wrapper {
+        .faq-container {
+            .header {
+                margin-bottom: 2.5rem;
+
+                .content {
+                    h4 {
+                        color: $color-white;
+                        font-family: 'SF Pro Text';
+                        font-size: 1.5rem;
+                        font-weight: 200;
+                        letter-spacing: -.8px;
+                        line-height: 1.875rem;
+                        margin-bottom: 0;
+                    }
+
+                    h2 {
+                        color: $color-white;
+                    }
+
+                    p {
+                        color: $color-white;
+                        font-size: 1rem;
+                        letter-spacing: -.8px;
+                    }
+                }
+            }
+        }
+    }
+}

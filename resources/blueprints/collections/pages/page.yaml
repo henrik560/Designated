@@ -23,6 +23,13 @@ sections:
           collections:
             - page_header
             - text_field_with_table_block
+            - two_images_block
+            - steps_list_block
+            - cases_slider_block
+            - clients_block
+            - faq_block
+            - testimonials_block
+            - images_with_text_block
           validate:
             - required
   sidebar:

@@ -1,0 +1,51 @@
+.vue-step-item {
+    &:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
+    .content-container {
+        padding-bottom: 40px;
+        border-bottom: 1px solid $color-gray;
+
+        .step-title {
+            h3 {
+                font-size: 1.5rem;
+                line-height: 2rem;
+                color: $color-white;
+                font-family: 'SF Pro Text';
+            }
+        }
+
+        .content {
+            padding-left: 1.25rem;
+
+            p {
+                color: $color-white;
+                font-size: 1rem;
+                font-weight: 400;
+
+                .text-green {
+                    font-weight: bold;
+                }
+
+                &:not(:last-child) {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+
+        .step-index {
+            top: 10px;
+            right: 0;
+
+            .index {
+                .counter {
+                    color: $color-primary-light;
+                    font-size: 16.25rem;
+                    font-weight: bold;
+                    line-height: 1;
+                }  
+            }
+        }
+    }
+}

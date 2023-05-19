@@ -1,0 +1,69 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: content
+        field:
+          restrict: false
+          automatic_line_breaks: true
+          automatic_links: false
+          escape_markup: false
+          smartypants: false
+          antlers: false
+          display: Content
+          type: markdown
+          icon: markdown
+          instructions: 'content above the list'
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: steps_list
+        field:
+          collapse: true
+          previews: true
+          sets:
+            step_item:
+              display: 'Step Item'
+              fields:
+                -
+                  handle: title
+                  field:
+                    input_type: text
+                    antlers: false
+                    display: Title
+                    type: text
+                    icon: text
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                -
+                  handle: content
+                  field:
+                    restrict: false
+                    automatic_line_breaks: true
+                    automatic_links: true
+                    escape_markup: false
+                    smartypants: false
+                    antlers: false
+                    display: Content
+                    type: markdown
+                    icon: markdown
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+          display: Steps_list
+          type: replicator
+          icon: replicator
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+title: 'Steps List Block'

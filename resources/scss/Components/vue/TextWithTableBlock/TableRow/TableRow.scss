@@ -1,16 +1,7 @@
 .vue-table-row {
-    display: flex;
-    
     .table-info {
-        flex: 1 1 60%;
-        padding: 1.125rem;
-
-        @media screen and (max-width: 768px) {
-            flex: 1 0 60%;
-        }
-
         .row-data-content {
-            padding-left: 1.375rem;
+            width: 160px;
 
             .title {
                 color: $color-black;
@@ -26,7 +17,7 @@
                     position: absolute;
                     top: 150%;
                     left: -150%;
-                    width: 400px;
+                    width: 300px;
                     border-radius: 1rem;
                     padding: 1rem;
 
@@ -49,21 +40,31 @@
 
     .table-check,
     .table-cross {
-        flex: 1 1 20%;
+        min-width: 110px;
+        position: relative;
         padding: 0;
 
-        .checkmark {
-            background-color: rgb(218,246,237);
+        &.table-check {
+            &:after {
+                content: "";
+                background-color: rgb(218,246,237);
+                height: 100%;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 100%;
+            }
         }
 
         .checkmark, .crossmark {
-            padding: 1.5rem;
+            position: relative;
+            z-index: 2;
 
             .font-icon {
                 padding: 0.5rem;
-                width: 25px;
-                height: 25px;
-                margin: 0 70px;
+                width: 16px;
+                height: 16px;
+                // margin: 0 70px;
             }
         }
     }

@@ -18,5 +18,8 @@
         "vite": "^4.0.0",
         "vite-plugin-sass": "^0.1.0",
         "vue": "^3.2.41"
+    },
+    "dependencies": {
+        "swiper": "^9.3.2"
     }
 }

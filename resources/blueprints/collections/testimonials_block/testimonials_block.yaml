@@ -1,0 +1,88 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: content
+        field:
+          type: markdown
+          localizable: true
+      -
+        handle: testimonials
+        field:
+          collapse: false
+          previews: true
+          sets:
+            testimonial:
+              display: Testimonial
+              fields:
+                -
+                  handle: review
+                  field:
+                    antlers: false
+                    display: Review
+                    type: textarea
+                    icon: textarea
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    validate:
+                      - required
+                -
+                  handle: client_name
+                  field:
+                    input_type: text
+                    antlers: false
+                    display: 'Client Name'
+                    type: text
+                    icon: text
+                    width: 50
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    validate:
+                      - required
+                -
+                  handle: clients_function
+                  field:
+                    input_type: text
+                    antlers: false
+                    display: 'Clients Function'
+                    type: text
+                    icon: text
+                    width: 50
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                -
+                  handle: thumbnail
+                  field:
+                    mode: list
+                    container: images
+                    folder: clients/profiles
+                    restrict: true
+                    allow_uploads: true
+                    show_filename: true
+                    max_files: 1
+                    display: Thumbnail
+                    type: assets
+                    icon: assets
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    validate:
+                      - required
+          display: Testimonials
+          type: replicator
+          icon: replicator
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+title: 'Testimonials Block'

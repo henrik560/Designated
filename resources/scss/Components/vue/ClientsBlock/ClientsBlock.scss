@@ -1,0 +1,28 @@
+.vue-clients-block {
+    padding: 3.75rem 0;
+
+    .clients-wrapper {
+        .clients-container {
+            .heading {
+                .content {
+                    h4 {
+                        font-family: 'SF Pro Text';
+                        font-size: 1.5rem;
+                        font-weight: 200;
+                        letter-spacing: -.8px;
+                        line-height: 1.875rem;
+                        margin-bottom: 0;
+                    }
+
+                    .text-green {
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            .clients {
+                margin: 1.5rem -1.5rem 0;
+            }
+        }
+    }
+}

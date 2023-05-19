@@ -1,0 +1,67 @@
+.vue-testimonials-block {
+    padding-top: 4.685rem;
+    padding-bottom: 3.75rem;
+
+    .testimonials-wrapper {
+        .testimonials-container {
+            .header {
+                .content {
+                    h4 {
+                        font-family: 'SF Pro Text';
+                        font-weight: 200;
+                        font-size: 1.5rem;
+                        letter-spacing: -.8px;
+                        margin-bottom: 0;
+                        line-height: 1.875rem;
+                    }
+                }
+            }
+
+            .testimonials-swiper {
+                width: calc(100vw - 1.5rem);
+            }
+
+            .swiper-selectors {
+                margin-top: 1.875rem;
+                width: fit-content;
+
+                .swiper-button-prev,
+                .swiper-button-next {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 0;
+                    top: unset;
+                    left: unset;
+                    right: unset;
+                    width: 35px;
+                    height: 35px;
+
+                    &:after {
+                        content: "";
+                        display: inline-block;
+                        width: 15px;
+                        height: 15px;
+                        background-size: 100%;
+                        background-repeat: no-repeat;
+                        background-image: url("../assets/svg/arrow-right-white.svg");
+                    }
+                }
+
+                .swiper-button-prev {
+                    background-color: $color-white-darken;
+
+                    &:after {
+                        transform: rotate(180deg);
+                        filter: invert(0.5);
+                    }
+                }
+
+                .swiper-button-next {
+                    background-color: $color-black;
+                }
+            }
+        }
+    }
+}

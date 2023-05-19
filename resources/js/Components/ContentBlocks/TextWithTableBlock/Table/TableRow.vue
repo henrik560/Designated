@@ -11,8 +11,8 @@ const props = defineProps({
 
 <template>
     <tr class="vue-table-row">
-        <td class="table-info flex items-center">
-            <div class="row-data-content flex gap-4">
+        <td class="table-info py-3 px-5">
+            <div class="row-data-content flex gap-4 items-center">
                 <span class="title">{{ data[0] }}</span>
                 <div class="info tooltip-group group">
                     <div class="tooltip"><i class="fa-solid fa-circle-info text-gray-400"></i></div>
@@ -20,7 +20,7 @@ const props = defineProps({
                 </div>
             </div>
         </td>
-        <td class="table-check"><div class="checkmark"><i class="fa-solid fa-check checkmark-icon font-icon text-white bg-green-500 rounded-full"></i></div></td>
-        <td class="table-cross"><div class="crossmark"><i class="fa-solid fa-xmark crossmark-icon font-icon text-white bg-red-500 rounded-full"></i></div></td>
+        <td class="table-check"><div class="checkmark flex justify-center py-3 px-5"><i class="fa-solid fa-check checkmark-icon font-icon text-white bg-green-500 rounded-full"></i></div></td>
+        <td class="table-cross"><div class="crossmark flex justify-center py-3 px-5"><i class="fa-solid fa-xmark crossmark-icon font-icon text-white bg-red-500 rounded-full"></i></div></td>
     </tr>
 </template>

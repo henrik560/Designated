@@ -18,15 +18,16 @@ const getCells = computed(() => {
 <template>
     <div class="vue-text-with-table">
         <div class="content-wrapper mx-6">
-            <div class="container">
+            <div class="container mx-auto">
                 <div class="content">
                     <div v-html="content.content"></div>
                 </div>
                 <div class="table-container">
-                    <div class="row-content">
+                    <div class="table-wrapper p-6">
                         <table class="table">
                             <tbody>
-                                <tr class="table-header-row flex items-center">
+                                <tr class="table-header-row">
+                                    <th class="table-header-item empty-row"></th>
                                     <th class="table-header-item custom">Maatwerk website</th>
                                     <th class="table-header-item template">Template website</th>
                                 </tr>

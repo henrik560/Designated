@@ -1,0 +1,64 @@
+.vue-testimonial {
+    transition: all 0.3s ease-in-out;
+
+    &.swiper-slide-active {
+        background-color: $color-black;
+
+        .item-wrapper {
+            .inner {
+                .quote {
+                    color: $color-white;
+                }
+
+                .reviewer {
+                    .user {
+                        .name, .function {
+                            color: $color-white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .item-wrapper {
+        .inner {
+            box-shadow: none;
+            transition: all 0.3s ease-in-out;
+            padding: 2.25rem 1.5rem;
+
+            .quote {
+                color: $color-black;
+            }
+
+            .reviewer {
+                margin-top: 2rem;
+
+                .image-wrapper {
+                    border-radius: 100%;
+                    width: 55px;
+                    height: 55px;
+                    overflow: hidden;
+                }
+
+                .user {
+                    .name, .function {
+                        transition: all 0.3s ease-in-out;
+                        color: $color-black;
+
+                        &.name {
+                            font-size: 1.125rem;
+                            font-weight: 500;
+                            margin-bottom: 5px;
+                        }
+
+                        &.function {
+                            font-size: 0.75rem;
+                            font-weight: 300;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+      -
+        handle: content
+        field:
+          type: markdown
+          localizable: true
+      -
+        handle: questions
+        field:
+          collapse: false
+          previews: true
+          sets:
+            question:
+              display: Question
+              fields:
+                -
+                  handle: title
+                  field:
+                    input_type: text
+                    antlers: false
+                    display: Title
+                    type: text
+                    icon: text
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                -
+                  handle: answer
+                  field:
+                    antlers: false
+                    display: Answer
+                    type: textarea
+                    icon: textarea
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+          display: Questions
+          type: replicator
+          icon: replicator
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+title: 'Faq Block'

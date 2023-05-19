@@ -1,0 +1,52 @@
+.vue-case-slide {
+    opacity: 0.5;
+    transition-duration: 0.9s;
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.25,0.74,0.22,0.99);
+
+    &.swiper-slide-active {
+        opacity: 1;
+        margin-left: 2rem;
+    }
+
+    .image-wrapper {
+        img {
+            height: 200px;
+            box-shadow: 0 0.3472222222vw 4.1666666667vw rgba(0,0,0,.45);
+            object-fit: cover;
+            object-position: center;
+            width: 100%;
+        }
+    }
+
+    .content-wrapper {
+        margin-top: 1.5rem;
+
+        .content {
+            .actions {
+                font-size: 0.75rem;
+                line-height: 1.25rem;
+                margin-bottom: 0.675rem;
+                color: $color-white;
+                opacity: 0.7;
+                font-weight: 400;
+            }
+
+            .title {
+                color: $color-white;
+                margin-bottom: 0.675rem;
+                padding-right: 0;
+                width: 100%;
+                font-size: 1.625rem;
+                line-height: 2.25rem;
+            }
+
+            .description {
+                font-size: 0.875rem;
+                line-height: 1.5rem;
+                color: $color-white;
+                font-weight: 200;
+            }
+        }
+    }
+}
