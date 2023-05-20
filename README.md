@@ -1,6 +1,6 @@
 # Laravel 9 Project with Vue 3 and Statamic - README
 
-Welcome to this amazing Laravel 9 project with Vue 3 and Statamic! This project is set up using the fantastic Tailwind CSS and SCSS. In this README, you'll find a detailed guide on how to install the project, starting from `composer install` all the way to running `npm run build`. We'll guide you step by step, and don't worry, we've added some fun jokes to keep it entertaining!
+Welcome to this amazing Laravel 9 project with Vue 3 and Statamic! This project is set up using the fantastic Tailwind CSS and SCSS. In this README, you'll find a detailed guide on how to install the project, starting from `composer install` all the way to running `npm run build`. We'll guide you step by step.
 
 ## Requirements
 
