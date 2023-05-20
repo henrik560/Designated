@@ -1,0 +1,45 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: naam
+        field:
+          input_type: text
+          antlers: false
+          display: Naam
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          validate:
+            - required
+      -
+        handle: e-mailadres
+        field:
+          input_type: text
+          antlers: false
+          display: E-mailadres
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          validate:
+            - required
+            - email
+      -
+        handle: telefoonnummer
+        field:
+          input_type: text
+          antlers: false
+          display: Telefoonnummer
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          validate:
+            - required
+            - numeric

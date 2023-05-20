@@ -1,0 +1,79 @@
+sections:
+  block_1:
+    display: 'Block 1'
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: content_block_1
+        field:
+          type: markdown
+          localizable: true
+          instructions_position: above
+          listable: hidden
+          visibility: visible
+          restrict: false
+          automatic_line_breaks: true
+          automatic_links: false
+          escape_markup: false
+          smartypants: false
+          antlers: false
+      -
+        handle: form_block_1
+        field:
+          max_items: 1
+          display: Form
+          type: form
+          icon: form
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          validate:
+            - required
+  block_2:
+    display: 'Block 2'
+    fields:
+      -
+        handle: content_block_2
+        field:
+          restrict: false
+          automatic_line_breaks: true
+          automatic_links: false
+          escape_markup: false
+          smartypants: false
+          antlers: false
+          display: Content
+          type: markdown
+          icon: markdown
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          validate:
+            - required
+      -
+        handle: form_block_2
+        field:
+          max_items: 1
+          display: Form
+          type: form
+          icon: form
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: footer_text_block_2
+        field:
+          input_type: text
+          antlers: false
+          display: 'Footer text'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+title: '2 Forms With Content Block'

@@ -8,6 +8,7 @@ import ClientsBlock from '@/Components/ContentBlocks/ClientsBlock/ClientsBlock.v
 import FaqBlock from '@/Components/ContentBlocks/FaqBlock/FaqBlock.vue';
 import TestimonialsBlock from '@/Components/ContentBlocks/TestimonialsBlock/TestimonialsBlock.vue';
 import ImagesWithTextBlock from '@/Components/ContentBlocks/ImagesWithTextBlock/ImagesWithTextBlock.vue';
+import TwoFormContentBlock from '@/Components/ContentBlocks/TwoFormsContentBlock/TwoFormContentBlock.vue'
 
 const props = defineProps({
     block: Object
@@ -29,4 +30,5 @@ const isContentBlock = (handle) => {
     <FaqBlock v-if="isContentBlock('faq_block')" :content="block"></FaqBlock>
     <TestimonialsBlock v-if="isContentBlock('testimonials_block')" :content="block"></TestimonialsBlock>
     <ImagesWithTextBlock v-if="isContentBlock('images_with_text_block')" :content="block"></ImagesWithTextBlock>
+    <TwoFormContentBlock v-if="isContentBlock('2_forms_with_content_block')" :content="block"></TwoFormContentBlock>
 </template>

@@ -1,0 +1,98 @@
+.vue-two-form-content-block {
+    .progress {
+        .progression {
+            height: 10px;
+            animation: loading 3s infinite linear;
+            background: -webkit-linear-gradient(left,$color-black 30%,#484848 80%,$color-black) repeat;
+            background-size: 50% 100%;
+        }
+
+        .remaining {
+            height: 10px;
+            background-color: $color-remaining;
+        }
+    }   
+
+    .block-one-wrapper {
+        .block-one-container {
+            .inner {
+                padding: 60px 0;
+
+                .content {
+                    h4 {
+                        margin-bottom: 1rem;
+                        font-size: 1rem;
+                        color: $color-text;
+                        font-weight: 400;
+                    }
+
+                    p {
+                        margin-bottom: 1rem;
+                        font-size: 1rem;
+                        font-weight: 200;
+                        letter-spacing: -.8px;
+                    }
+
+                    ul {
+                        margin-bottom: 1.75rem;
+
+                        li {
+                            position: relative;
+                            padding-left: 1.875rem;
+                            font-size: 0.875rem;
+                            margin-bottom: 0.25rem;
+                            font-weight: 200;
+                            letter-spacing: -.8px;
+
+                            &:before {
+                                content: "";
+                                display: inline-block;
+                                position: absolute;
+                                left: 0;
+                                top: 4px ;
+                                width: 15px;
+                                height: 15px;
+                                background-image: url("../assets/svg/check.svg");
+                                background-size: contain;
+                                background-position: center;
+                                background-repeat: no-repeat;
+                            }
+                        }
+                    }
+                }
+
+                .form {
+                    .form-item {
+                        margin-bottom: 1.5rem;
+
+                        .item-label {
+                            margin-bottom: 0.5rem;
+                            font-weight: bold;
+                            font-size: 1rem;
+
+                            .required {
+                                color: $color-red;
+                            }
+                        }
+
+                        .item-input {
+                            height: 55px;
+                            border: 1px solid $color-input-border;
+                        }
+
+                        &.submit-button {
+                            margin-bottom: 0;
+
+                            .submit-button {
+                                background-color: $color-black;
+                                color: $color-white;
+                                margin-top: 0.5rem;
+                                height: 55px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

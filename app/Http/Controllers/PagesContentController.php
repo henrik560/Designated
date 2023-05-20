@@ -19,6 +19,7 @@ class PagesContentController extends Controller
         /** @var Collection|null $entry */
         $entry = collect(Collection::findByHandle("pages")->queryEntries()->where('slug', $page)->with('content_blocks')->get())->toArray();
 
+
         if (!$entry) {
             throw new HttpException(404, 'Page not found!');
         }

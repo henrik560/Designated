@@ -4,7 +4,7 @@
 
 @import './variable.scss', './typography.scss';
 
-@import './Components/animations/pluse.scss';
+@import './Components/animations/animations.scss';
 
 @import './Components/vue/PageHeader/pageHeader.scss',
 
@@ -23,6 +23,8 @@
         './Components/vue/Testimonials/Testimonial/Testimonial.scss',
 
         './Components/vue/TwoImagesBlock/TwoImagesBlock.scss',
+
+        './Components/vue/TwoFormContentBlock/TwoFormContentBlock.scss',
 
         './Components/vue/ImageWithTextBlock/ImageWithTextBlock.scss',
 

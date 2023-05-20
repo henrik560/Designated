@@ -30,6 +30,7 @@ sections:
             - faq_block
             - testimonials_block
             - images_with_text_block
+            - 2_forms_with_content_block
           validate:
             - required
   sidebar:
