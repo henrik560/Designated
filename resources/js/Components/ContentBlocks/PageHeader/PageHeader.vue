@@ -18,7 +18,7 @@ const props = defineProps({
                 </div>
             </div>
         </div>
-        <div class="sub-header" v-if="content.header_usps">
+        <div class="sub-header" id="discover" v-if="content.header_usps">
             <div class="wrapper mx-6">
                 <div class="container sub-wrapper">
                     <div class="usps-wrapper">

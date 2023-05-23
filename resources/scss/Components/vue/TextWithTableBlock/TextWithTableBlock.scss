@@ -31,11 +31,15 @@
                     overflow: scroll hidden;
                     width: 100vw;
 
+                    &::-webkit-scrollbar {
+                        display: none;
+                    }
+
                     .table {
                         width: 420px;
                         border-collapse: collapse;
                         border-spacing: 0;
-                        box-shadow: 0 0.3472222222vw 4.1666666667vw rgba(0,0,0,.12);
+                        box-shadow: 0 0.3472222222vw 4.1666666667vw rgba(0, 0, 0, .12);
 
                         .table-header-row {
                             .table-header-item {
@@ -44,14 +48,14 @@
                                 font-weight: normal;
 
                                 &.custom {
-                                    background-color: rgb(218,246,237);
+                                    background-color: rgb(218, 246, 237);
                                 }
                             }
                         }
                     }
                 }
 
-                
+
             }
         }
     }

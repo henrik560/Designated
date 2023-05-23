@@ -1,5 +1,8 @@
 <script setup>
-import { ref } from 'vue';
+import axios from 'axios';
+import { ref, onMounted, computed } from 'vue';
+import BlockOne from './Blocks/BlockOne/BlockOne.vue';
+import BlockTwo from './Blocks/BlockTwo/BlockTwo.vue';
 
 const props = defineProps({
     content: {
@@ -8,9 +11,28 @@ const props = defineProps({
     }
 })
 
-const userRef = ref(null);
-const emailRef = ref(null);
-const PhoneRef = ref(null);
+const companyData = ref([]);
+
+onMounted(() => {
+    fetchCompanyData();
+})
+
+const fetchCompanyData = () => {
+    axios.get(`/api/global/company`)
+        .then((response) => {
+            if (response.data.globals) {
+                companyData.value = response.data.globals.data;
+            }
+        })
+}
+
+const getMailtoHref = computed(() => {
+    return `mailto:${companyData.email}`
+})
+
+const getCallUsHref = computed(() => {
+    return `tel:+${companyData.phonenumber}`
+})
 
 </script>
 
@@ -20,27 +42,24 @@ const PhoneRef = ref(null);
             <div class="progression w-1/2"></div>
             <div class="remaining w-1/2"></div>
         </div>
-        <div class="block-one-wrapper mx-6">
-            <div class="block-one-container container">
-                <div class="inner">
-                    <div class="content" v-html="content.content_block_1"></div>
-                    <form class="form">
-                        <div class="form-item flex flex-col">
-                            <label class="item-label" for="name">Naam <span class="required">*</span></label>
-                            <input class="item-input" type="text" name="name">
+        
+        <BlockOne :content="content"></BlockOne>
+        <BlockTwo :content="content"></BlockTwo>
+
+        <div class="contact-block">
+            <div class="content-wrapper mx-6">
+                <div class="content container">
+                    <h4>{{ content.footer_text_block_2 }}</h4>
+                    <div class="contact-info flex gap-5">
+                        <div class="call flex flex-col">
+                            <span>Bel ons</span>
+                            <a :href="getCallUsHref">{{ companyData.phonenumber }}</a>
                         </div>
-                        <div class="form-item flex flex-col">
-                            <label class="item-label" for="email">E-mailadres <span class="required">*</span></label>
-                            <input class="item-input" type="email" name="email">
+                        <div class="mail flex flex-col">
+                            <span>E-mail ons</span>
+                            <a :href="getMailtoHref">{{ companyData.email }}</a>
                         </div>
-                        <div class="form-item flex flex-col">
-                            <label class="item-label" for="phonenumber">Telefoonnummer <span class="required">*</span></label>
-                            <input class="item-input" type="text" name="phonenumber">
-                        </div>
-                        <div class="form-item submit-button flex flex-col">
-                            <input type="submit" value="Versturen" class="submit-button">
-                        </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
