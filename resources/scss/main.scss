@@ -1,11 +1,20 @@
+//Tailwind classes
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+//Base scss
 @import './variable.scss', './typography.scss';
 
+//Animations
 @import './Components/animations/animations.scss';
 
+//Popups
+@import './Components/vue/Popups/contact.scss',
+'./Components/vue/Popups/popup.scss',
+'./Components/vue/Popups/icon.scss';
+
+//ContactBlocks
 @import './Components/vue/PageHeader/pageHeader.scss',
 
 './Components/vue/StepsList/StepsList.scss',

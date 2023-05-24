@@ -1,8 +1,8 @@
 .vue-case-slide {
     opacity: 0.5;
-    transition-duration: 0.9s;
+    transition-duration: $transition-xl;
     transition-property: all !important;
-    transition-timing-function: cubic-bezier(0.25,0.74,0.22,0.99);
+    transition-timing-function: cubic-bezier(0.25, 0.74, 0.22, 0.99);
 
     &.swiper-slide-active {
         opacity: 1;
@@ -12,7 +12,7 @@
     .image-wrapper {
         img {
             height: 200px;
-            box-shadow: 0 0.3472222222vw 4.1666666667vw rgba(0,0,0,.45);
+            box-shadow: 0 0.3472222222vw 4.1666666667vw rgba(0, 0, 0, .45);
             object-fit: cover;
             object-position: center;
             width: 100%;

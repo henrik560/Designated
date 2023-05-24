@@ -1,0 +1,17 @@
+.vue-contact-popup-icon {
+    width: 70px;
+    height: 70px;
+    backdrop-filter: blur(11px);
+    background-color: hsla(0, 0%, 100%, .6);
+    box-shadow: inset 0 0 0 1px $color-input-border;
+
+    .inner {
+        .outer-image {
+            .image {
+                animation: rotate 15s linear infinite;
+                width: 60px;
+                height: 60px;
+            }
+        }
+    }
+}

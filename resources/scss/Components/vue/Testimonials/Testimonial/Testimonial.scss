@@ -1,5 +1,5 @@
 .vue-testimonial {
-    transition: all 0.3s ease-in-out;
+    transition: all $transition-sm ease-in-out;
 
     &.swiper-slide-active {
         background-color: $color-black;
@@ -12,7 +12,9 @@
 
                 .reviewer {
                     .user {
-                        .name, .function {
+
+                        .name,
+                        .function {
                             color: $color-white;
                         }
                     }
@@ -24,7 +26,7 @@
     .item-wrapper {
         .inner {
             box-shadow: none;
-            transition: all 0.3s ease-in-out;
+            transition: all $transition-sm ease-in-out;
             padding: 2.25rem 1.5rem;
 
             .quote {
@@ -42,8 +44,10 @@
                 }
 
                 .user {
-                    .name, .function {
-                        transition: all 0.3s ease-in-out;
+
+                    .name,
+                    .function {
+                        transition: all $transition-sm ease-in-out;
                         color: $color-black;
 
                         &.name {

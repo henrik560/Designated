@@ -18,22 +18,22 @@
         .arrow-wrapper {
             .arrow-container {
                 background-color: $color-gray;
-                transition: 0.4s cubic-bezier(.25,.74,.22,.99);
+                transition: $transition-md cubic-bezier(.25, .74, .22, .99);
                 width: 25px;
                 height: 25px;
 
                 &.active {
-                   background-color: $color-white; 
+                    background-color: $color-white;
 
-                   .arrow {
+                    .arrow {
                         filter: invert(1);
                         transform: rotate(-90deg);
-                   }
+                    }
                 }
 
                 .arrow {
                     background-image: url('../assets/svg/arrow-down.svg');
-                    transition: 0.4s cubic-bezier(.25,.74,.22,.99);
+                    transition: $transition-md cubic-bezier(.25, .74, .22, .99);
                     background-size: cover;
                     transform: rotate(90deg);
                     width: 15px;
@@ -45,14 +45,14 @@
 
     .faq-answer {
         overflow: hidden;
-        transition: max-height 0.6s ease-in-out;
+        transition: max-height $transition-lg ease-in-out;
         padding: 1.25rem 0 0 1.25rem;
         max-height: 0px;
 
         .inner {
-            transition: transform 0.4s cubic-bezier(.25,.74,.22,.99) 0.2s;
-            transform: translateY(20px);   
-            padding-bottom: 1.25rem;     
+            transition: transform $transition-md cubic-bezier(.25, .74, .22, .99) 0.2s;
+            transform: translateY(20px);
+            padding-bottom: 1.25rem;
 
             &.open {
                 transform: translateY(0px) !important;

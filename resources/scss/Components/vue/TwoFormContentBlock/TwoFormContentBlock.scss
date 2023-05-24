@@ -156,7 +156,7 @@
                     font-size: 0.875rem;
                     box-shadow: inset 0 0 0 2px #000;
                     margin-top: 1.875rem;
-                    transition: 0.3s;
+                    transition: $transition-sm;
 
                     &:hover {
                         background: rgba($color-black, 0.15);
