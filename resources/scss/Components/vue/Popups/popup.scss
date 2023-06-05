@@ -5,12 +5,82 @@
         background-color: $color-primary;
         box-shadow: 0 3px 30px rgba(0, 0, 0, .06);
 
+        .bg-img {
+            opacity: 0.03;
+        }
 
         .container {
             padding: 3.125rem 1.875rem;
 
             .header {
                 padding-bottom: 1.875rem;
+
+                h2 {
+                    font-size: 2.875rem;
+                    color: $color-white;
+
+                    &.after-emoji {
+                        &:after {
+                            content: "";
+                            display: inline-block;
+                            width: 30px;
+                            height: 30px;
+                            background: url('../assets/images/hand-emoji.png') center center no-repeat;
+                            background-size: 100%;
+                            margin-left: 1.25rem;
+                            margin-top: -0.5rem;
+                        }
+                    }
+                }
+
+                p {
+                    color: lighten($color-text, 42.5);
+                    letter-spacing: -.8px;
+                }
+            }
+
+            .contact-options {
+                border: 1px solid $color-input-border;
+                box-shadow: 0 3px 20px rgba(0, 0, 0, .08);
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    top: 30px;
+                    left: -1.875rem;
+                    height: 100%;
+                    width: calc(100% + 3.75rem);
+                    background-color: $color-white;
+                    z-index: 1;
+                }
+
+                .inner {
+                    z-index: 2;
+
+                    .row {
+                        .inner-row {
+                            padding: 1.5rem 0;
+                            border-bottom: 1px solid $color-input-border;
+
+                            h3 {
+                                font-size: 1.25rem;
+                                line-height: 1.875rem;
+                                margin-bottom: 0.375rem;
+                            }
+
+                            .row-link {
+                                font-size: 1.125rem;
+                                margin-bottom: 0.25rem;
+                            }
+
+                            .row-under-label {
+                                font-size: 0.625rem;
+                                color: $color-text;
+                                font-weight: 200;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

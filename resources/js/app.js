@@ -2,7 +2,6 @@ import './bootstrap';
 
 import { createApp, h } from 'vue';
 import { createInertiaApp } from '@inertiajs/vue3';
-import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
 import BaseLayout from './Layouts/Layout.vue';
 
 const appName = window.document.getElementsByTagName('title')[0]?.innerText || 'Laravel';
